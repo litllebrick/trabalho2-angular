@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>
+        Events
+    </h1>
+    <div class="row">
+        <div *ngFor="let d of data" class="col-md-3 card">
+            <img src="{{d.thumbnail.path}}.{{d.thumbnail.extension}}" alt="">
+            {{d.name}}
+            
+        </div>
+    </div>
+
+</div>

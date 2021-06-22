@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>
+        Charactrers
+    </h1>
+    <div class="row">
+        <div *ngFor="let d of data" class="col-md-3 card">
+            <img src="{{d.thumbnail.path}}.{{d.thumbnail.extension}}" alt="">
+            {{d.name}}
+            <a href="{{d.urls[0].url}}" target="_blank">
+                <button class="btn btn-primary">Detalhes</button>
+            </a>
+        </div>
+    </div>
+
+</div>

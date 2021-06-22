@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>
+        Comics
+    </h1>
+    <div class="row">
+        <div *ngFor="let d of data" class="col-md-3">
+            <img src="{{d.thumbnail.path}}.{{d.thumbnail.extension}}" alt="">
+            {{d.title}}
+        </div>
+    </div>
+  
+</div>
